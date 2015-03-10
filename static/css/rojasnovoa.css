@@ -1,0 +1,262 @@
+/**
+ * @author Sebastian Romero 
+ * @project Rojas Novoa Asesorias Legales
+ * @date 21-02-2015
+ */
+/**
+ * Fonts
+ */
+/**
+ * This represents the different colors used in the site
+ */
+/** @type  Background color for body and main font color  */
+body {
+  margin: 0;
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: normal;
+}
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+header li {
+  list-style: none;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/rojasnovoa/rojasnovoa.eot?-fvaux7');
+  src: url('../fonts/rojasnovoa/rojasnovoa.eot?#iefix-fvaux7') format('embedded-opentype'), url('../fonts/rojasnovoa/rojasnovoa.woff?-fvaux7') format('woff'), url('../fonts/rojasnovoa/rojasnovoa.ttf?-fvaux7') format('truetype'), url('../fonts/rojasnovoa/rojasnovoa.svg?-fvaux7#rojasnovoa') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"],
+.logo,
+.facebook,
+.twitter {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-acompanamiento:before {
+  content: "\61";
+}
+.icon-conciliacion:before {
+  content: "\63";
+}
+.icon-contact:before {
+  content: "\74";
+}
+.icon-derecho-civil:before {
+  content: "\64";
+}
+.facebook:before {
+  content: "\66";
+}
+.icon-google-plus:before {
+  content: "\2b";
+}
+.icon-laboral:before {
+  content: "\69";
+}
+.icon-logo-filled:before {
+  content: "\6c";
+}
+.logo:before {
+  content: "\67";
+}
+.icon-map:before {
+  content: "\6d";
+}
+.icon-procesal:before {
+  content: "\70";
+}
+.icon-propiedad:before {
+  content: "\73";
+}
+.twitter:before {
+  content: "\77";
+}
+a {
+  transition: color 800ms ease;
+}
+body {
+  background: #1e1e1e;
+  color: #ffffff;
+  font-smoothing: antialiased;
+  font: normal 300 1em/1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 100%;
+}
+a {
+  color: #92aad5;
+  text-decoration: none;
+}
+a:hover {
+  color: #b2ceff;
+}
+.section-c-2 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.section-c-2 .column {
+  display: inline-block;
+  float: left;
+  min-height: 2em;
+  width: 45%;
+  margin: 0 5% 0 0;
+}
+.page-wrapper {
+  margin: 0 auto;
+  max-width: 50%;
+  min-width: 320px;
+  position: relative;
+}
+.section {
+  background: #313642;
+  padding: 2em;
+}
+.section .section-c-2 {
+  margin: 1em 0;
+}
+.section h2 {
+  margin: 1em 0;
+  font-size: 1.4em;
+}
+.section h3 {
+  margin: .5em 0;
+  font: normal 300 1em/1em 'Georgia', serif;
+  color: #92aad5;
+  line-height: 1.2em;
+}
+.section h4 {
+  margin: 1em 0;
+}
+.section p {
+  font-size: .9em;
+  line-height: 1.4em;
+}
+.section .frame {
+  width: 100%;
+  border-radius: .2em;
+  position: relative;
+  overflow: hidden;
+  margin: 1em 0;
+}
+.section .frame img {
+  width: 100%;
+}
+.section .social {
+  margin: 1em 0;
+}
+.section .resume h4 {
+  font-size: 1.3em;
+}
+.section .resume p {
+  color: #b4b4b4;
+  font-size: .8em;
+}
+.section.services {
+  background-color: #ffffff;
+}
+.section.services h2,
+.section.services p,
+.section.services ul {
+  color: #1e1e1e;
+}
+.section.services .list {
+  overflow: hidden;
+}
+.section.services .list li {
+  list-style: none;
+  float: left;
+  width: 45%;
+  margin: 0 5% 0 0;
+}
+.section.services .list span {
+  color: #a9aeb9;
+}
+.section.services .list p {
+  color: #646e82;
+}
+.hero {
+  text-align: center;
+}
+.hero .page-wrapper {
+  padding: 4em 0;
+}
+.hero .logo {
+  font-size: 4em;
+}
+.hero .logo span {
+  display: none;
+}
+.hero h2 {
+  margin: 2em auto;
+  width: 14em;
+  line-height: 1em;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+.hero .social {
+  position: absolute;
+  bottom: .8em;
+  right: 0;
+  font: normal 300 1em/1em 'Georgia', serif;
+}
+.main-header {
+  text-align: right;
+}
+.main-header ul {
+  display: inline-block;
+}
+.main-header li {
+  display: inline-block;
+  padding: 1em .2em;
+}
+.main-header a {
+  font-size: .9em;
+  color: #ffffff;
+}
+.main-header a:hover {
+  color: #92aad5;
+}
+.social li {
+  display: inline-block;
+}
+.social .facebook,
+.social .twitter {
+  background: #ffffff;
+  border-radius: 100%;
+  padding: .5em;
+  width: 1.2em;
+  height: 1em;
+  display: block;
+  font-size: 0.7em;
+  color: #1e1e1e;
+}
+.social .facebook span,
+.social .twitter span {
+  display: none;
+}
