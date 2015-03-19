@@ -86,10 +86,40 @@ a {
             font-size: .8em;
         }
     }
+    //Servicios
     &.services {
         background-color: @site-section-services-background-color;
         h1 {
             margin-top: 4%;
+        }
+    }
+    //Contacto
+    &.contact {
+        background: @site-body-background-color;
+        margin-bottom: 5em;
+        h2 {
+            text-align: center;
+            color: @site-section-contact-color;
+            margin-bottom: 1em auto;
+            margin-top: 2em;
+            font-size: 2em;
+        }
+        p {
+            text-align: center;
+            color: @site-section-contact-color;
+            margin-bottom: 0.5em;
+        }
+        .icon-map {
+            color: @site-section-contact-color;
+            background: @icon-map-background-color;
+            border-radius: 100%;
+            padding: .5em;
+        }
+        .icon-contact {
+            color: @site-section-contact-color;
+            background: @icon-contact-background-color;
+            border-radius: 100%;
+            padding: .5em;
         }
     }
     h2,
@@ -115,6 +145,7 @@ a {
     }
 }
 
+//Inicio
 .hero {
     text-align: center;
     .page-wrapper {
@@ -141,6 +172,7 @@ a {
     }
 }
 
+//Top Buttons
 .main-header {
     text-align: right;
     ul {
@@ -176,5 +208,14 @@ a {
         span {
             display: none;
         }
+    }
+}
+
+.footer {
+    margin: 0 auto;
+    margin-bottom: 3em;
+    p {
+        text-align: left;
+        color: #7e7e7e;
     }
 }
