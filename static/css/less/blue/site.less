@@ -36,12 +36,23 @@ a {
 }
 /*Inicio division de Secciones*/
 
+//Caja de fondo Transparencia Seccion Firm
 .section {
     background: @site-section-background-color;
     padding: 2em;
+    //Propiedades seccion Firma
     &.firm {
+        .bgbox {
+            background: @site-section-background-color;
+            opacity: 0.96;
+            filter: alpha(opacity=96);
+            /* For IE8 and earlier */
+        }
         background-image: @site-section-background-image;
-        opacity: 0.5;
+        p,
+        h2 {
+            color: @site-font-color;
+        }
     }
     .section-c-2 {
         margin: 1em 0;
