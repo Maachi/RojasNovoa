@@ -22,7 +22,7 @@ module.exports = function(grunt) {
 		less: {
 			css: {
 				files: {
-					'<%= dev %>/css/rojasnovoa.css': '<%= dev %>/css/less/main.less'
+					'<%= dev %>/css/main.css': '<%= dev %>/css/less/main.less'
 				},
 				options: {
 					sourceMap: false
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 			},
 			css: {
 				files: {
-					'<%= dev %>/css/rojasnovoa.css': '<%= dev %>/css/rojasnovoa.css'
+					'<%= dev %>/css/main.css': '<%= dev %>/css/main.css'
 				}
 			}
 		},
