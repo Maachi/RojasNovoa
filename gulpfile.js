@@ -9,7 +9,7 @@ gulp.task('default', ['less', 'webserver', 'watch']);
 
 
 gulp.task('less', function () {
-	return gulp.src('./static/less/**/*.less')
+	return gulp.src('./static/less/main.less')
 		.pipe(less({
 			paths: [ path.join(__dirname, 'less', 'includes') ]
 		}))
