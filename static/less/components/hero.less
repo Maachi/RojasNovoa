@@ -1,18 +1,39 @@
 .hero{
-
+	position: relative;
 	background-image: url('../images/home/bogota-bw.jpg');
 	background-size: cover;
 	background-position: center;
 	min-height: 25em;
+	width: 100%;
+
+	.slide-gr { 
+		width: 100%;
+		position: absolute;
+		bottom: 1em;
+	}
 
 	.main-group{
+		width: 60%;
+		display: block;
+
 		h1, h2 {
 			display: inline;
+		}
+
+		h1{
+			font-size: 2.3em;
+			font-weight: 700;
 		}
 
 		h2{
 			font-family: @main-font-family;
 			font-weight: 300;
+			font-size: 2.2em;
 		}
+	}
+
+	.view-more-info{
+		display: block;
+		margin: .5em 0;
 	}
 }

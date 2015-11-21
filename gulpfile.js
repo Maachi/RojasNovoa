@@ -2,7 +2,8 @@ var gulp = require('gulp'),
 	connect = require('gulp-connect'),
 	less = require('gulp-less'),
 	path = require('path'),
-	minifyCSS = require('gulp-minify-css');
+	minifyCSS = require('gulp-minify-css'),
+	autoprefixer = require('gulp-autoprefixer');
 
 
 gulp.task('default', ['less', 'webserver', 'watch']);
@@ -13,6 +14,7 @@ gulp.task('less', function () {
 		.pipe(less({
 			paths: [ path.join(__dirname, 'less', 'includes') ]
 		}))
+		.pipe(autoprefixer())
 		.pipe(minifyCSS())
 		.pipe(gulp.dest('./static/css'));
 });
