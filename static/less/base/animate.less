@@ -1,0 +1,22 @@
+.main-menu{
+	transition:all 800ms ease, opacity 800ms ease;
+}
+
+#rojas-novoa-logo{
+	.first-path,
+	.second-path{
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+		animation: dash 15s linear forwards;
+	}
+
+	.second-path{
+		animation-delay: .5s;
+	}
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
