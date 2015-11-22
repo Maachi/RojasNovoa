@@ -10,10 +10,41 @@
 
 	.page-group{
 
+		h2{
+			font-size: 2.1em;
+		}
+
 		h3 {
 			color:@interior-font-color;
 			font-family: @main-font-family;
 			font-weight: 300;
+			font-size: 1.2em;
+			margin: 0 0 1em 0;
+		}
+	}
+}
+
+#rojas-novoa-logo{
+	margin: 0 0 1em;
+}
+
+.bullet:before {
+    background: @link-color;
+    height: .3em;
+    width: .3em;
+    content: '';
+    display: inline-block;
+    margin: 0 .5em 0 0;
+}
+
+.list-of-items{
+	a {
+		color: @main-font-color;
+		text-decoration: none;
+		font-size: .9em;
+
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 }
