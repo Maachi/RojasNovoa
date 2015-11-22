@@ -48,3 +48,34 @@
 		}
 	}
 }
+
+.small {
+	font-size: .8em;
+}
+
+input[type=text],
+textarea{
+	font-family: @main-font-family;
+	font-size: 1em;
+	border-radius: .2em;
+	border: none;
+	background: @input-background-color;
+	padding: 1em .5em;
+
+	&:focus{
+		outline: none;
+	}
+}
+
+textarea{
+	resize:none;
+}
+
+button {
+	background: @special-font-color;
+	color: @main-font-color;
+	font-size: .8em;
+	font-weight: bold;
+	padding: 1em;
+	margin: 1em 0;
+}

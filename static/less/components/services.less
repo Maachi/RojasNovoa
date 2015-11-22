@@ -24,8 +24,33 @@
 	}
 
 	.services{
+		margin: 0;
+		padding: 0;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		display: flex;
+
 		li{
 			margin: 1em 0 0;
+			width: 30%;
+
+			h4{
+				font-size: 1.5em;
+				margin: 0 0 .5em;
+				color: @services-font-color;
+			}
+
+			a{
+				color: @interior-font-color;
+			}
+
+			.list-of-items{
+				margin: 1em 0 0 0;
+				li{
+					margin: 0;
+					width: 100%;
+				}
+			}
 		}
 	}
 }
