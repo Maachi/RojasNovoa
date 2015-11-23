@@ -88,7 +88,7 @@
 				$(this).on("click", function(event){
 					var achor = $(this).attr("href");
 					event.preventDefault();
-					$("html, body").animate({ scrollTop: $(achor).offset().top }, 600);
+					$("html, body").animate({ scrollTop: $(achor).offset().top - header.height() }, 600);
 				});
 			});
 			loadFonts(function(){
