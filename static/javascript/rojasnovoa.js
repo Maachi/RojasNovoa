@@ -29,15 +29,23 @@
 
 		function whileScrolling(){
 			$(window).scroll(function (event) {
-				if($(window).scrollTop()>=theFirm.offset().top && 
-					$(window).scrollTop()<theServices.offset().top){
-					header.addClass("menu-firm");
-					header.removeClass("menu-services");
-				} else if ($(window).scrollTop()>=theServices.offset().top){
-					header.addClass("menu-services");
+				if(theFirm.offset()){
+					if($(window).scrollTop()>=theFirm.offset().top && 
+						$(window).scrollTop()<theServices.offset().top){
+						header.addClass("menu-firm");
+						header.removeClass("menu-services");
+					} else if ($(window).scrollTop()>=theServices.offset().top){
+						header.addClass("menu-services");
+					} else {
+						header.removeClass("menu-firm");
+						header.removeClass("menu-services");
+					}
 				} else {
-					header.removeClass("menu-firm");
-					header.removeClass("menu-services");
+					if ($(window).scrollTop()>=theServices.offset().top){
+						header.addClass("menu-services");
+					} else {
+						header.removeClass("menu-services");
+					}
 				}
 			});
 		}
