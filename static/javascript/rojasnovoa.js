@@ -84,7 +84,29 @@
 				} else {
 					$(this.message).removeClass("error");
 				}
+				if (isValid){
+					sendForm();
+				}
 				return isValid;
+			});
+		}
+
+
+		function sendForm(){
+			$.ajax({
+				contentType: 'application/json',
+				data: JSON.stringify({
+
+				}),
+				dataType: 'json',
+				success: function(data){
+					console.log(data);
+				},
+				error: function(){
+					console.log('Device control failed');
+				},
+				type: 'POST',
+				url: ''
 			});
 		}
 
